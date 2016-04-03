@@ -23,9 +23,9 @@ dev-qt/qtopengl
 dev-qt/qtpaths
 dev-qt/qtpositioning
 dev-qt/qtprintsupport
-dev-qt/qtquick1
+#dev-qt/qtquick1
 dev-qt/qtquickcontrols
-dev-qt/qtscript
+#dev-qt/qtscript
 dev-qt/qtsensors
 dev-qt/qtserialport
 dev-qt/qtsql
