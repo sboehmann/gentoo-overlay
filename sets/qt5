@@ -42,5 +42,6 @@ dev-qt/qtxml
 dev-qt/qtxmlpatterns
 #dev-qt/qt3d
 dev-qt/qtbluetooth
-#dev-qt/qtlocation
+dev-qt/qtlocation
+dev-qt/qtpositioning
 
