@@ -6,10 +6,9 @@ EAPI=6
 
 KMNAME="kde-baseapps"
 EGIT_BRANCH="frameworks"
-
 inherit kde5
 
-DESCRIPTION="KDialog can be used to show nice dialog boxes from shell scripts"
+DESCRIPTION="Can be used to show nice dialog boxes from shell scripts"
 KEYWORDS=""
 IUSE=""
 
@@ -18,8 +17,6 @@ S=${WORKDIR}/${P}/${PN}
 DEPEND="
 	$(add_frameworks_dep kdelibs4support)
 	$(add_frameworks_dep kwidgetsaddons)
-	dev-qt/qtdbus:5
-	dev-qt/qtgui:5
-	dev-qt/qtwidgets:5
+	$(add_qt_dep qtdbus)
 "
 RDEPEND="${DEPEND}"
