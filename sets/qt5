@@ -6,11 +6,15 @@ dev-qt/pixeltool
 dev-qt/qdbus
 dev-qt/qdbusviewer
 dev-qt/qdoc
+dev-qt/qt-creator
 dev-qt/qt-docs
+dev-qt/qt3d
 dev-qt/qtbluetooth
+dev-qt/qtcharts
 dev-qt/qtchooser
 dev-qt/qtconcurrent
 dev-qt/qtcore
+dev-qt/qtdatavis3d
 dev-qt/qtdbus
 dev-qt/qtdeclarative
 dev-qt/qtdiag
@@ -27,8 +31,8 @@ dev-qt/qtplugininfo
 dev-qt/qtpositioning
 dev-qt/qtprintsupport
 dev-qt/qtquickcontrols
-dev-qt/qtplugininfo
-dev-qt/qtscript
+dev-qt/qtquickcontrols2
+dev-qt/qtscxml
 dev-qt/qtsensors
 dev-qt/qtserialport
 dev-qt/qtsql
