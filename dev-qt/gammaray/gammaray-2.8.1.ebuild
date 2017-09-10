@@ -9,7 +9,7 @@ inherit cmake-utils git-r3
 DESCRIPTION="Tool to poke around in a Qt-application and also to manipulate the application to some extent"
 HOMEPAGE="http://www.kdab.com/gammaray"
 EGIT_REPO_URI="git://github.com/KDAB/GammaRay.git"
-EGIT_COMMIT="v2.8.0"
+EGIT_COMMIT="v2.8.1"
 EGIT_CLONE_TYPE="single"
 
 LICENSE="GPL-2+"
@@ -39,14 +39,14 @@ RDEPEND="
     virtual/pkgconfig
 
     git? ( dev-vcs/git )
-    
+
     wayland? (
         >=dev-libs/wayland-1.12
         dev-qt/qtwayland:5
     )
-  
+
     kde? ( kde-frameworks/kcoreaddons:5 )
-    kde? ( kde-frameworks/syntax-highlighting:5 )    
+    kde? ( kde-frameworks/syntax-highlighting:5 )
 "
 
 DEPEND="
