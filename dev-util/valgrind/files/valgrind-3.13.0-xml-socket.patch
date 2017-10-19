@@ -1,0 +1,12 @@
+diff -Naur valgrind-3.13.0.orig//coregrind/m_libcprint.c valgrind-3.13.0//coregrind/m_libcprint.c
+--- valgrind-3.13.0.orig/coregrind/m_libcprint.c	(revision 16465)
++++ valgrind-3.13.0/coregrind/m_libcprint.c	(working copy)
+@@ -526,7 +526,7 @@
+          break;
+ 
+       case VgLogTo_Socket:
+-         log_fd = prepare_sink_socket(VG_(clo_xml_fname_unexpanded),
++         xml_fd = prepare_sink_socket(VG_(clo_xml_fname_unexpanded),
+                                       &VG_(xml_output_sink), True);
+          break;
+    }
