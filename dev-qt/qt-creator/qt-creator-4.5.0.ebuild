@@ -33,7 +33,7 @@ QTC_PLUGINS=('android:android|qmakeandroidsupport' autotools:autotoolsprojectman
 IUSE="doc systemd test +webengine ${QTC_PLUGINS[@]%:*}"
 
 # minimum Qt version required
-QT_PV="5.6.0:5"
+QT_PV="5.6.2:5"
 
 CDEPEND="
 	=dev-libs/botan-1.10*[-bindist,threads]
@@ -53,7 +53,7 @@ CDEPEND="
 	>=dev-qt/qtxml-${QT_PV}
 	clangcodemodel? ( >=sys-devel/clang-3.9:= )
 	designer? ( >=dev-qt/designer-${QT_PV} )
-	qbs? ( >=dev-util/qbs-1.8.1-r1 )
+	qbs? ( >=dev-util/qbs-1.9.1 )
 	systemd? ( sys-apps/systemd:= )
 	webengine? ( >=dev-qt/qtwebengine-${QT_PV}[widgets] )
 "
@@ -134,8 +134,9 @@ src_prepare() {
 	fi
 
 	# disable broken or unreliable tests
+	sed -i -e 's/\(manual\|tools\|unit\)//g' tests/tests.pro || die
 	sed -i -e '/sdktool/ d' tests/auto/auto.pro || die
-	sed -i -e '/dumpers\.pro/ d' tests/auto/debugger/debugger.pro || die
+	sed -i -e '/\(dumpers\|offsets\)\.pro/ d' tests/auto/debugger/debugger.pro || die
 	sed -i -e '/CONFIG -=/ s/$/ testcase/' tests/auto/extensionsystem/pluginmanager/correctplugins1/plugin?/plugin?.pro || die
 	sed -i -e '/timeline\(items\|notes\|selection\)renderpass/ d' tests/auto/timeline/timeline.pro || die
 	sed -i -e 's/\<memcheck\>//' tests/auto/valgrind/valgrind.pro || die
