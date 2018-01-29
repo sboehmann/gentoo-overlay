@@ -81,7 +81,8 @@ RDEPEND="${CDEPEND}
 "
 # qt translations must also be installed or qt-creator translations won't be loaded
 for x in ${PLOCALES}; do
-	RDEPEND+=" linguas_${x}? ( >=dev-qt/qttranslations-${QT_PV} )"
+	true
+    #RDEPEND+=" l10n_${x}? ( >=dev-qt/qttranslations-${QT_PV} )"
 done
 unset x
 
