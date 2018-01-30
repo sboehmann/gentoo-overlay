@@ -4,13 +4,13 @@
 
 EAPI=5
 
-inherit cmake-utils git-r3
+inherit cmake-utils
 
 DESCRIPTION="The Linux perf GUI for perfomance analysis"
 HOMEPAGE="http://www.kdab.com/hotspot"
-EGIT_REPO_URI="git://github.com/KDAB/hotspot.git"
-EGIT_COMMIT="v1.1.0"
-EGIT_CLONE_TYPE="single"
+SRC_URI="https://github.com/KDAB/${PN}/releases/download/v${PV}/${PN}-v${PV}.tar.gz -> ${P}.tar.gz"
+
+S=${WORKDIR}/${PN}-v${PV}
 
 LICENSE="GPL-2+"
 SLOT="0"
@@ -38,7 +38,6 @@ RDEPEND="
     dev-qt/qtgui:5
     dev-qt/qtconcurrent:5
     dev-qt/qtnetwork:5
-    dev-qt/qtwebkit:5
     dev-qt/qtwidgets:5
     dev-qt/qtxml:5
     dev-qt/qtprintsupport:5
@@ -53,6 +52,6 @@ DEPEND="
     app-doc/doxygen
 "
 
-src_configure() {
-    cmake-utils_src_configure
-}
+#src_configure() {
+#    cmake-utils_src_configure
+#}
