@@ -45,7 +45,6 @@ dev-qt/qtvirtualkeyboard
 dev-qt/qtwayland
 dev-qt/qtwebchannel
 dev-qt/qtwebengine
-dev-qt/qtwebkit
 dev-qt/qtwebsockets
 dev-qt/qtwebview
 dev-qt/qtwidgets
