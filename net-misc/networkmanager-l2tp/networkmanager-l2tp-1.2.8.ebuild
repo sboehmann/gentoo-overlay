@@ -22,6 +22,7 @@ IUSE="gnome"
 
 DEPEND="sys-devel/gettext
 	dev-util/intltool
+    sys-apps/iproute2
 	virtual/pkgconfig
 	>=net-misc/networkmanager-0.8.1
 	>=dev-libs/dbus-glib-0.74
