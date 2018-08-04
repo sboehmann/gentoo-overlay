@@ -21,19 +21,20 @@ KEYWORDS="~amd64 ~x86"
 IUSE="gnome"
 
 DEPEND="sys-devel/gettext
-	dev-util/intltool
+    dev-util/intltool
     sys-apps/iproute2
-	virtual/pkgconfig
-	>=net-misc/networkmanager-0.8.1
-	>=dev-libs/dbus-glib-0.74
-	=net-dialup/ppp-2.4.7*
-	net-dialup/xl2tpd
-	net-vpn/libreswan
-	gnome? (
-		x11-libs/gtk+:3
-		gnome-base/gconf:2
-		gnome-base/gnome-keyring
-	)"
+    virtual/pkgconfig
+    >=net-misc/networkmanager-0.8.1
+    >=dev-libs/dbus-glib-0.74
+    =net-dialup/ppp-2.4.7*
+    net-dialup/xl2tpd
+    net-vpn/libreswan
+    gnome? (
+        x11-libs/gtk+:3
+        gnome-base/gconf:2
+        gnome-base/gnome-keyring
+        gnome-extra/nm-applet
+    )"
 RDEPEND="${DEPEND}"
 
 #S="${WORKDIR}/${MY_PN}-${PV}"
