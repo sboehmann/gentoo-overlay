@@ -29,7 +29,7 @@ RDEPEND="
 	>=dev-python/pylint-1.9.3[${PYTHON_USEDEP}]
 	~dev-python/future-0.16.0[${PYTHON_USEDEP}]
 	=dev-python/pygments-2*[${PYTHON_USEDEP}]
-	~dev-python/astroid-1.6.5[${PYTHON_USEDEP}]
+	>=dev-python/astroid-1.6.5[${PYTHON_USEDEP}]
 	=dev-python/deprecation-2*[${PYTHON_USEDEP}]
 	~dev-python/tqdm-4.28.1[${PYTHON_USEDEP}]
 	=dev-python/jinja-2*[${PYTHON_USEDEP}]
