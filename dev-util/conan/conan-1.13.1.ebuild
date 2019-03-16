@@ -19,6 +19,7 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 RDEPEND="
 	=dev-python/pyjwt-1.5*[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.7[${PYTHON_USEDEP}]
+    >=dev-python/pluginbase-0.5[${PYTHON_USEDEP}]
 	=dev-python/colorama-0.4*[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.11[${PYTHON_USEDEP}]
 	~dev-python/patch-1.16[${PYTHON_USEDEP}]
