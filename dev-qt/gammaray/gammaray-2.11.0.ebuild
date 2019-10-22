@@ -9,7 +9,7 @@ inherit cmake-utils git-r3
 DESCRIPTION="Tool to poke around in a Qt-application and also to manipulate the application to some extent"
 HOMEPAGE="http://www.kdab.com/gammaray"
 EGIT_REPO_URI="git://github.com/KDAB/GammaRay.git"
-EGIT_COMMIT="v2.8.1"
+EGIT_COMMIT="v2.11.0"
 EGIT_CLONE_TYPE="single"
 
 LICENSE="GPL-2+"
@@ -25,14 +25,11 @@ RDEPEND="
     dev-qt/qtgui:5
     dev-qt/qtconcurrent:5
     dev-qt/qtnetwork:5
-    dev-qt/qtwebkit:5
     dev-qt/qtwidgets:5
     dev-qt/qtxml:5
     dev-qt/qtprintsupport:5
-    dev-qt/qtprintsupport:5
     dev-qt/qtdeclarative:5
     dev-qt/qttest:5
-    dev-qt/qtsvg:5
     dev-qt/qtsvg:5
 
     dev-lang/perl
@@ -55,5 +52,6 @@ DEPEND="
 "
 
 src_configure() {
+    local mycmakeargs=("-DGAMMARAY_BUILD_DOCS=OFF")
     cmake-utils_src_configure
 }
