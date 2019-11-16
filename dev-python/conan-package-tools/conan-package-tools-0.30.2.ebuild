@@ -4,7 +4,7 @@
 EAPI=7
 PYTHON_COMPAT=( python3_{5,6} )
 
-inherit distutils-r1 vcs-snapshot
+inherit distutils-r1
 
 DESCRIPTION="Helps with massive package creation and CI integration"
 HOMEPAGE="https://github.com/conan-io/conan-package-tools"
