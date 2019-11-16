@@ -15,10 +15,10 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
+  dev-util/conan[${PYTHON_USEDEP}]
   dev-python/idna[${PYTHON_USEDEP}]
   dev-python/six[${PYTHON_USEDEP}]
   dev-python/requests[${PYTHON_USEDEP}]
-  dev-python/conan[${PYTHON_USEDEP}]
   dev-python/tabulate[${PYTHON_USEDEP}]
 "
 
