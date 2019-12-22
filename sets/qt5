@@ -51,3 +51,4 @@ dev-qt/qtwidgets
 dev-qt/qtx11extras
 dev-qt/qtxml
 dev-qt/qtxmlpatterns
+dev-qt/qtgamepad
