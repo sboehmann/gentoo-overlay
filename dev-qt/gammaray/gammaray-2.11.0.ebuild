@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit cmake-utils git-r3
+inherit eutils cmake-utils git-r3
 
 DESCRIPTION="Tool to poke around in a Qt-application and also to manipulate the application to some extent"
 HOMEPAGE="http://www.kdab.com/gammaray"
@@ -50,6 +50,10 @@ DEPEND="
     ${RDEPEND}
     app-doc/doxygen
 "
+
+PATCHES=(
+	"${FILESDIR}/${P}-qt514.patch"
+)
 
 src_configure() {
     local mycmakeargs=("-DGAMMARAY_BUILD_DOCS=OFF")
