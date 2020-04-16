@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<repositories version="1.0">
-<repo priority="50" quality="experimental" status="unofficial">
-    <name>sboehmann</name>
-    <description>My personal gentoo overlay</description>
-    <homepage>https://github.com/sboehmann/gentoo-overlay</homepage>
-    <owner>
-        <email>gentoo@hilefoks.org</email>
-    </owner>
-    <source type="git">https://github.com/sboehmann/gentoo-overlay.git</source>
-    <feed>https://github.com/sboehmann/gentoo-overlay/commits/master.atom</feed>
+<repo quality="experimental" status="unofficial">
+  <name>sboehmann</name>
+  <description lang="en">sboehmann's personal overlay</description>
+  <homepage>https://github.com/sboehmann/gentoo-overlay</homepage>
+  <owner type="person">
+    <email>devel@hilefoks.org</email>
+    <name>Stefan Böhmann</name>
+  </owner>
+  <source type="git">https://github.com/sboehmann/gentoo-overlay.git</source>
+  <feed>https://github.com/sboehmann/gentoo-overlay/commits/master.atom</feed>
 </repo>
-</repositories>
