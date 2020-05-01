@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-LLVM_MAX_SLOT=9
+LLVM_MAX_SLOT=10
 PLOCALES="cs da de fr ja pl ru sl uk zh-CN zh-TW"
 
 inherit llvm qmake-utils virtualx xdg
@@ -23,6 +23,8 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 	S=${WORKDIR}/${MY_P}
 fi
+
+PATCHES=("${FILESDIR}/${P}-clang10.patch")
 
 # TODO: unbundle sqlite and KSyntaxHighlighting
 
