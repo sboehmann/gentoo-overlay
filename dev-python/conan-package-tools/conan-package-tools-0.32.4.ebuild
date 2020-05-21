@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
-  <dev-util/conan-1.25.0[${PYTHON_USEDEP}]
+  <dev-util/conan-1.26.0[${PYTHON_USEDEP}]
   <dev-python/six-1.15.0[${PYTHON_USEDEP}]
   >=dev-python/six-1.10.0[${PYTHON_USEDEP}]
   <dev-python/tabulate-0.9.0[${PYTHON_USEDEP}]
