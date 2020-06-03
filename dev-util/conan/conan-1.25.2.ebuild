@@ -30,6 +30,7 @@ RDEPEND="
 	>=dev-python/node-semver-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/patch-ng-1.17.4[${PYTHON_USEDEP}]
 	>=dev-python/pluginbase-0.5[${PYTHON_USEDEP}]
+	<dev-python/pluginbase-1.0[${PYTHON_USEDEP}]
 	>=dev-python/pygments-2.0[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-1.4[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.7.0[${PYTHON_USEDEP}]
@@ -37,6 +38,8 @@ RDEPEND="
 	>=dev-python/requests-2.8.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	>=dev-python/tqdm-4.28.1[${PYTHON_USEDEP}]
+
+    <dev-python/distro-1.2.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests nose
