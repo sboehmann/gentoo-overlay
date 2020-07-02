@@ -49,10 +49,6 @@ RDEPEND="
 	<dev-python/jinja-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.7.0[${PYTHON_USEDEP}]
 	<dev-python/python-dateutil-3.0.0[${PYTHON_USEDEP}]
-    >=dev-python/cryptography-1.3.4[${PYTHON_USEDEP}]
-    <dev-python/cryptography-2.4.0[${PYTHON_USEDEP}]
-    >=dev-python/pyopenssl-16.0.0[${PYTHON_USEDEP}]
-    <dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests nose
