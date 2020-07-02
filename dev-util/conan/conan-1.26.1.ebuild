@@ -33,7 +33,7 @@ RDEPEND="
 	<dev-python/patch-ng-1.18.0[${PYTHON_USEDEP}]
 	>=dev-python/fasteners-0.14.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.10.0[${PYTHON_USEDEP}]
-	<dev-python/six-1.14.0[${PYTHON_USEDEP}]
+	<=dev-python/six-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/node-semver-0.6.1[${PYTHON_USEDEP}]
     >=dev-python/distro-1.0.2[${PYTHON_USEDEP}]
     <dev-python/distro-1.2.0[${PYTHON_USEDEP}]
