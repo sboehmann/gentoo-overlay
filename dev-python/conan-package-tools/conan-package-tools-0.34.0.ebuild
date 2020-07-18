@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6,7,8,9} )
 
 inherit distutils-r1
 
@@ -15,9 +15,9 @@ SLOT="0"
 KEYWORDS="amd64"
 
 DEPEND="
+  <dev-util/conan-1.28.0[${PYTHON_USEDEP}]
   >=dev-python/six-1.10.0[${PYTHON_USEDEP}]
   <dev-python/six-1.15.0[${PYTHON_USEDEP}]
-  <dev-util/conan-1.27.0[${PYTHON_USEDEP}]
   >=dev-python/tabulate-0.8.0[${PYTHON_USEDEP}]
   <dev-python/tabulate-0.9.0[${PYTHON_USEDEP}]
 "
