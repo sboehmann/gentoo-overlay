@@ -23,7 +23,8 @@ RDEPEND="
 	>=dev-python/bottle-0.12.8[${PYTHON_USEDEP}]
 	>=dev-python/colorama-0.3.3[${PYTHON_USEDEP}]
 	>=dev-python/deprecation-2.0[${PYTHON_USEDEP}]
-	>=dev-python/distro-1.0.2[${PYTHON_USEDEP}]
+    >=dev-python/distro-1.0.2[${PYTHON_USEDEP}]
+	<=dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/fasteners-0.14.1[${PYTHON_USEDEP}]
 	>=dev-python/future-0.16.0[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10.1[${PYTHON_USEDEP}]
@@ -36,7 +37,7 @@ RDEPEND="
 	>=dev-python/pyyaml-5.1[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.8.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-    <=dev-python/six-1.14.0[${PYTHON_USEDEP}]
+    <=dev-python/six-1.15.0[${PYTHON_USEDEP}]
 	>=dev-python/tqdm-4.28.1[${PYTHON_USEDEP}]
     <dev-python/pluginbase-1.0.0[${PYTHON_USEDEP}]
 "
@@ -59,9 +60,7 @@ src_prepare() {
 	default
 	# Fix strict dependencies
 	sed -i \
-		-e "s:six>=1.10.0,<1.14.0:six>=1.12.0:g" \
 		-e "s:node-semver==0.6.1:node-semver>=0.6.1:g" \
-		-e "s:distro>=1.0.2, <1.2.0:distro>=1.0.2:g" \
 		conans/requirements.txt || die
 }
 
