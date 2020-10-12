@@ -21,25 +21,43 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 # https://github.com/conan-io/conan/blob/develop/conans/requirements_server.txt
 RDEPEND="
 	>=dev-python/bottle-0.12.8[${PYTHON_USEDEP}]
+	
 	>=dev-python/colorama-0.3.3[${PYTHON_USEDEP}]
+	
 	>=dev-python/deprecation-2.0[${PYTHON_USEDEP}]
-    >=dev-python/distro-1.0.2[${PYTHON_USEDEP}]
+	<dev-python/deprecation-2.1[${PYTHON_USEDEP}]
+	
+	>=dev-python/distro-1.0.2[${PYTHON_USEDEP}]
 	<=dev-python/distro-1.5.0[${PYTHON_USEDEP}]
+	
 	>=dev-python/fasteners-0.14.1[${PYTHON_USEDEP}]
+	
 	>=dev-python/future-0.16.0[${PYTHON_USEDEP}]
+	
 	>=dev-python/jinja-2.10.1[${PYTHON_USEDEP}]
+	
 	>=dev-python/node-semver-0.6.1[${PYTHON_USEDEP}]
+	
 	>=dev-python/patch-ng-1.17.4[${PYTHON_USEDEP}]
+	
 	>=dev-python/pluginbase-0.5[${PYTHON_USEDEP}]
+	
 	>=dev-python/pygments-2.0[${PYTHON_USEDEP}]
+	
 	>=dev-python/pyjwt-1.4[${PYTHON_USEDEP}]
+	
 	>=dev-python/python-dateutil-2.7.0[${PYTHON_USEDEP}]
+	
 	>=dev-python/pyyaml-5.1[${PYTHON_USEDEP}]
+	
 	>=dev-python/requests-2.8.1[${PYTHON_USEDEP}]
+	
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-    <=dev-python/six-1.15.0[${PYTHON_USEDEP}]
+	<=dev-python/six-1.15.0[${PYTHON_USEDEP}]
+	
 	>=dev-python/tqdm-4.28.1[${PYTHON_USEDEP}]
-    <dev-python/pluginbase-1.0.0[${PYTHON_USEDEP}]
+	
+	<dev-python/pluginbase-1.0.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests nose
