@@ -16,7 +16,7 @@ KEYWORDS="amd64"
 
 DEPEND="
   >=dev-util/conan-1.7.0[${PYTHON_USEDEP}]
-  <dev-util/conan-1.33.0[${PYTHON_USEDEP}]
+  <dev-util/conan-1.34.0[${PYTHON_USEDEP}]
 
   >=dev-python/six-1.10.0[${PYTHON_USEDEP}]
   >=dev-python/tabulate-0.8.0[${PYTHON_USEDEP}]
